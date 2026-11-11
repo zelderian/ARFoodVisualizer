@@ -1248,9 +1248,7 @@ GameObject:
   - component: {fileID: 304180967}
   - component: {fileID: 304180972}
   - component: {fileID: 304180971}
-  - component: {fileID: 304180970}
   - component: {fileID: 304180969}
-  - component: {fileID: 304180968}
   m_Layer: 5
   m_Name: StateText
   m_TagString: Untagged
@@ -1277,31 +1275,7 @@ RectTransform:
   m_AnchoredPosition: {x: 20, y: -20}
   m_SizeDelta: {x: 900, y: 200}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &304180968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304180966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f22b01a31f800e4c95803e96eaa5795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ARSessionStateDisplay
 --- !u!114 &304180969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304180966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f22b01a31f800e4c95803e96eaa5795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ARSessionStateDisplay
---- !u!114 &304180970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1492,6 +1466,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331264287}
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331264294}
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331264293}
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331264292}
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 331264291}
   m_SourcePrefab: {fileID: 100100000, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
 --- !u!1 &331264286 stripped
 GameObject:
@@ -1525,6 +1511,92 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaceOrMoveObject
   objectPrefab: {fileID: 6443850965221679853, guid: f8ba1e57b759ead4d9b14d961410f3fd, type: 3}
+  arCamera: {fileID: 331264289}
+  maxTapDuration: 0.3
+  maxTapMovement: 30
+--- !u!20 &331264289 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778331, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &331264290 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387470528047718, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331264286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &331264291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331264286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcae53f054d212418bce7429ee5ec44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectTapController
+  arCamera: {fileID: 331264289}
+  textures:
+  - {fileID: 2800000, guid: 986b983aeb42d49439992efefa846d9a, type: 3}
+  - {fileID: 2800000, guid: 2868750f1f73010448f534200fc485ab, type: 3}
+  - {fileID: 2800000, guid: 827ce1113bad641438df6d0f60f27f34, type: 3}
+  - {fileID: 2800000, guid: 1c4a10b28665f254c9cbd25824ad23e5, type: 3}
+  multiTapDelay: 0.35
+  maxTapDuration: 0.3
+  maxTapMovement: 30
+--- !u!114 &331264292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331264286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c4faf1bf1de174593d6c981f6c8d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotateGestureController
+  placer: {fileID: 331264288}
+  arCamera: {fileID: 331264289}
+  rotationSpeed: 0.2
+  rotateHorizontalAxis: 1
+--- !u!114 &331264293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331264286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8c8079b1e97704ba0b68a545db9777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PinchScaleController
+  placer: {fileID: 331264288}
+  minScale: 0.05
+  maxScale: 1.5
+  pinchThreshold: 15
+--- !u!114 &331264294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331264286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466c3445c32b2964e822ca5853d701f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectDragController
+  arCamera: {fileID: 331264289}
+  raycastManager: {fileID: 331264290}
 --- !u!1 &332374253
 GameObject:
   m_ObjectHideFlags: 0

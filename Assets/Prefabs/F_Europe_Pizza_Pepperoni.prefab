@@ -190,6 +190,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5299036897950978087}
   - component: {fileID: 148963456958884892}
+  - component: {fileID: 6511779253116804293}
+  - component: {fileID: 5817918352254078879}
   m_Layer: 0
   m_Name: F_Europe_Pizza_Pepperoni
   m_TagString: Untagged
@@ -243,6 +245,42 @@ LODGroup:
     - renderer: {fileID: 2843242986137665381}
   m_Enabled: 1
   m_GlobalIlluminationLOD: 0
+--- !u!65 &6511779253116804293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443850965221679853}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.36892533, y: 0.09223133, z: 0.36895293}
+  m_Center: {x: 0.00005465746, y: 0.032042306, z: -0.000015825033}
+--- !u!114 &5817918352254078879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443850965221679853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f2182d329acd84a9523351b47a31d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodObject
+  spinSpeed: 120
+  bounceHeight: 0.15
+  bounceSpeed: 4
 --- !u!1 &9071432852478170819
 GameObject:
   m_ObjectHideFlags: 0
